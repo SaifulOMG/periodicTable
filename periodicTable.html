@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Periodic Table">
+    <title>Periodic Table</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
+    <link rel="stylesheet" href="periodicTable.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class = "main">
+        <section class = "header">
+            <div class="periodicHeader">Periodic Table</div>
+        </section>
+        <section class = "periodic">
+            <div class="periodicT">
+                <table>
+                    <tbody>
+                        <tr>
+                        <td class = "nonmetal" id = "gas11">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Hydrogen">H<br>1</h5>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class = "nobleGases" id = "gas10">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Helium">He<br>2</h5>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class = "alkaliMetals" id = "solid92">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Lithium">Li<br>3</h5>
+                        </td>
+                        <td class = "alkalineMetals" id = "solid91">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Beryllium">Be<br>4</h5>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class = "metaloids" id = "solid90">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Boron">B<br>5</h5>
+                        </td>
+                        <td class = "nonmetal" id = "solid89">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Carbon">C<br>6</h5>
+                        </td>
+                        <td class = "nonmetal" id= "gas9">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Nitrogen">N<br>7</h5>
+                        </td>
+                        <td class = "nonmetal" id = "gas8">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Oxygen">O<br>8</h5>
+                        </td>
+                        <td class = "halogen" id = "gas7">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Flourine">F<br>9</h5>
+                        </td>
+                        <td class = "nobleGases" id = "gas6">                       <h5 data-toggle="tooltip" data-placement="bottom" title="Neon">Ne<br>10</h5>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class = "alkaliMetals" id = "solid88">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Sodium">Na<br>11</h5>
+                        </td>
+                        <td  class = "alkalineMetals" id = "solid87">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Magnesium">Mg<br>12</h5>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class = "post-transitionMetal" id = "solid86">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Aluminium">Al<br>13</h5>
+                        </td>
+                        <td class = "metaloids" id = "solid85">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Silicon">Si<br>14</h5>
+                        </td>
+                        <td class = "nonmetal" id = "solid84">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Phosphorus">P<br>15</h5>
+                        </td>
+                        <td class = "nonmetal" id = "solid83">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Sulfur">S<br>16</h5>
+                        </td>
+                        <td class = "halogen" id = "gas5">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Chlorine">Cl<br>17</h5>
+                        </td>
+                        <td class = "nobleGases" id = "gas4">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Argon">Ar<br>18</h5>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class = "alkaliMetals" id = "solid82">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Potassium">K<br>19</h5>
+                        </td>
+                        <td class = "alkalineMetals" id = "solid81">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Calcium">Ca<br>20</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid80">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Scandium">Sc<br>21</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid79">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Titanium">Ti<br>22</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid78">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Vanadium">V<br>23</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid77">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Chromium">Cr<br>24</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid76">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Manganese">Mn<br>25</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid75" >
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Iron">Fe<br>26</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid74">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Cobalt">Co<br>27</h5>
+<!--                            ////////-->
+                        </td>
+                        <td class= "transitionMetal" id = "solid73">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Nickel">Ni<br>28</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid72">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Copper">Cu<br>29</h5>
+                        </td>
+                        <td class= "transitionMetal" id = "solid71">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Zinc">Zn<br>30</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "solid70">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Gallium">Ga<br>31</h5>
+                        </td>
+                        <td class = "metaloids" id = "solid69">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Germanium">Ge<br>32</h5>
+                        </td>
+                        <td class = "metaloids" id = "solid68">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Arsenic">As<br>33</h5>
+                        </td>
+                        <td class = "nonmetal" id = "solid67">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Selenium">Se<br>34</h5>
+                        </td>
+                        <td class = "halogen" id = "liquid2">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Bromine">Br<br>35</h5>
+                        </td>
+                        <td class = "nobleGases" id = "gas3">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Krypton">Kr<br>36</h5>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class = "alkaliMetals" id = "solid66">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Rubidium">Rb<br>37</h5>
+                        </td>
+                        <td class = "alkalineMetals" id = "solid65">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Strontium">Sr<br>38</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid64">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Yttrium">Y<br>39</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid63">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Zirconium">Zr<br>40</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid62">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Niobium">Nb<br>41</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid61">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Molybdenum">Mo<br>42</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid60">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Technetium">Tc<br>43</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid59">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Ruthenium">Ru<br>44</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid58">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Rhodium">Rh<br>45</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid57">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Palladium">Pd<br>46</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid56">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Silver">Ag<br>47</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid55">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Cadmium">Cd<br>48</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "solid54">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Indium">In<br>49</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "solid53">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Tin">Sn<br>50</h5>
+                        </td>
+                        <td class = "metaloids" id = "solid52">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Antimony">Sb<br>51</h5>
+                        </td>
+                        <td class = "metaloids" id = "solid51">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Tellurium">Te<br>52</h5>
+                        </td>
+                        <td class = "halogen" id = "solid50">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Iodine">I<br>53</h5>
+                        </td>
+                        <td class = "nobleGases" id = "gas2">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Xenon">Xe<br>54</h5>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class = "alkaliMetals" id = "solid47">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Caesium">Cs<br>55</h5>
+                        </td>
+                        <td class = "alkalineMetals" id = "solid46">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Barium">Ba<br>56</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid45">
+                        </td>
+                        <td class = "transitionMetal" id = "solid44">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Hafnium">Hf<br>72</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid43">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Tantalum">Ta<br>73</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid42">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Tungsten">W<br>74</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid41">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Rhenium">Re<br>75</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid40">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Osmium">Os<br>76</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid39">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Iridium">Ir<br>77</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid38">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Platinum">Pt<br>78</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "solid37">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Gold">Au<br>79</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "liquid1">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Mercury">Hg<br>80</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "solid35">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Thallium">Tl<br>81</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "solid34">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Lead">Pb<br>82</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "solid33">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Bismuth">Bi<br>83</h5>
+                        </td>
+                        <td class = "metaloids" id = "solid32">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Polonium">Po<br>84</h5>
+                        </td>
+                        <td class = "halogen" id = "solid31">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Astatine">At<br>85</h5>
+                        </td>
+                        <td class = "nobleGases" id = "gas1">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Radon">Rn<br>86</h5>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class = "alkaliMetals" id = "solid36">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Francium">Fr<br>87</h5>
+                        </td>
+                        <td class = "alkalineMetals" id = "solid48">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Radium">Ra<br>88</h5>
+                        </td>
+                        <td class= "actinoids" id = "solid49">
+                        </td>
+                        <td class = "transitionMetal" id = "unknown15">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Rutherfordium">Rf<br>104</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown14">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Dubnium">Db<br>105</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown13">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Seaborgium">Sg<br>106</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown12">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Bohrium">Bh<br>107</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown11">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Hassium">Hs<br>108</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown10">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Meitnerium">Mt<br>109</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown9">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Darmstadtium">Ds<br>110</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown8">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Roentgenium">Rg<br>111</h5>
+                        </td>
+                        <td class = "transitionMetal" id = "unknown7">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Copernicium">Cn<br>112</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "unknown6">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Ununtrium">Uut<br>113</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "unknown5">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Flerovium">Fl<br>114</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "unknown4">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Ununpentium">Uup<br>115</h5>
+                        </td>
+                        <td class = "post-transitionMetal" id = "unknown3">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Livermorium">Lv<br>116</h5>
+                        </td>
+                        <td class = "halogen" id = "unknown2">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Ununseptium">Uus<br>117</h5>
+                        </td>
+                        <td class = "nobleGases" id = "unknown1">
+                            <h5  data-toggle="tooltip" data-placement="bottom" title="Ununoctium">Uuo<br>118</h5>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        <td class = "pTBottom">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class = "lenthanoids" id = "solid30">
+                            <h5  data-toggle="tooltip" data-placement="bottom" title="Lanthanum">La<br>57</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid29">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Cerium">Ce<br>58</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid28">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Praseodymium">Pr<br>59</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid27">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Neodymium">Nd<br>60</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid26">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Promethium">Pm<br>61</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid25">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Samarium">Sm<br>62</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid24">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Europium">Eu<br>63</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid23">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Gadolinium">Gd<br>64</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid22">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Terbium">Tb<br>65</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid21">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Dysprosium">Dy<br>66</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid20">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Holmium">Ho<br>67</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid19">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Erbium">Er<br>68</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid18">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Thulium">Tm<br>69</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid17">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Ytterbium">Yb<br>70</h5>
+                        </td>
+                        <td class = "lenthanoids" id = "solid16">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Lutetium">Lu<br>71</h5>
+                        </td>
+                        </tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class = "actinoids" id = "solid15">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Actinium">Ac<br>89</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid14">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Thorium">Th<br>90</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid13">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Protactinium">Pa<br>91</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid12">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Uranium">U<br>92</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid11">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Neptunium">Np<br>93</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid10">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Plutonium">Pu<br>94</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid9">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Americium">Am<br>95</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid8">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Curium">Cm<br>96</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid7">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Berkelium">Bk<br>97</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid6">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Californium">Cf<br>98</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid5">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Einsteinium">Es<br>99</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid4">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Fermium">Fm<br>100</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid3">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Mendelevium">Md<br>101</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid2">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Nobelium">No<br>102</h5>
+                        </td>
+                        <td class = "actinoids" id = "solid1">
+                            <h5 data-toggle="tooltip" data-placement="bottom" title="Lawrencium">Lr<br>103</h5>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <div class = "key2"  >
+                <table>
+                    <tr>
+                        <td class = "element" id = "solid01">  
+                        </td>
+                        <td class = "element" id = "solid">
+                            Solid
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class = "element" id = "liquid01">
+                        </td>
+                        <td class = "element" id = "liquid">
+                            Liquid
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class = "element" id = "gas01">
+                        </td>
+                        <td class = "element" id = "gas">
+                            Gas
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class = "element" id = "unknown01">
+                        </td>
+                        <td class = "element" id = "unknown">
+                            Unknown
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class = " tableKey">
+            <div class = "key1">
+                <table>
+                    <tr>
+                        <td class = "alkaliMetals2">Alkali metals</td>
+                        <td class = "alkalineMetals2">Alkaline earth metals</td>
+                        <td class = "lenthanoids2">Lanthanoids</td>
+                        <td class = "actinoids2">Actinoids</td>
+                        <td class = "transitionMetal2">Transition metals</td>
+                        <td class = "post-transitionMetal2">Poor metals</td>
+                        <td class = "metaloids2">Metaloids</td>
+                        <td class = "nonmetal2">Other nonmetals</td>
+                        <td class = "halogen2">Halogen</td>
+                        <td class = "nobleGases2">Noble gases</td>
+                    </tr>
+                </table>
+            </div>
+             <div class = "pDesc">
+                <table class = "pInfo">
+                    <tr>
+                        <th class = "element" colspan="2" rowspan="2"></th>
+                        <th class = "element">No.</th>
+                        <th class = "element">Name</th>
+                        <th class = "element">Discovery</th>
+                        <th class = "element">Symbol</th>
+                    </tr>
+                    <tr>
+                        <td class = "element" id = "num"></td>
+                        <td class = "element" id = "name"></td>
+                        <td class = "element" id = "discovery"></td>
+                        <td class = "element" id = "symbol"></td>
+                    </tr>
+                    <tr>
+                        <th class = "element">Atomic.Wt</th>
+                        <td class = "element" id = "atomic"></td>
+                        <td class = "element" colspan="4" rowspan="7" id = "elDesc"></td>
+                    </tr>
+                    <tr>
+                        <th class = "element">Melting<br>Point</th>
+                        <td class = "element" id = "meltingPoint"></td>
+                    </tr>
+                    <tr>
+                        <th class = "element">Boiling<br>Point</th>
+                        <td class = "element" id = "boilingPoint"></td>
+                    </tr>
+                    <tr>
+                        <th class = "element">Density</th>
+                        <td class = "element" id = "density"></td>
+                    </tr>
+                    <tr>
+                        <th class = "element">Earth Crust</th>
+                        <td class = "element" id = "earthCrust"></td>
+                    </tr>
+                    <tr>
+                        <th class = "element">Electrons</th>
+                        <td class = "element" id = "electrons"></td>
+                     </tr>
+                     <tr>
+                        <th class = "element">Ionization<br>Energy</th>
+                        <td class = "element" id = "iEnergy"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="periodicTable.js"></script>
+    <script src="periodicTableToolTip.js"></script>
+    <script src="PeriodicTableClick.js"></script>
+</body>
+</html>

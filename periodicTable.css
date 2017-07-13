@@ -1,0 +1,403 @@
+
+body{
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 0.9em;
+    color: #444;
+    overflow-x: hidden;
+    margin: 0; 
+    border: 0;
+    padding: 0;
+}
+
+.main{ 
+    position: relative;
+    background-color: chocolate;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;  
+    width:100%;
+    height:100%;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color:black;
+    opacity: 0.5;
+}
+
+.periodicHeader{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-size: 80px;
+    font-weight: 600;
+    color: cadetblue;
+}
+
+td{
+    height: 55px;
+    width: 75px;
+    text-align: center;
+}
+
+.nonmetal{
+    background-color: blueviolet;
+    color: white;
+}
+
+.nobleGases{
+    background-color: turquoise;
+    color: white;
+}
+
+.alkaliMetals{
+    background-color: coral;
+    color: white;
+}
+
+.alkalineMetals{
+    background-color: lightcoral;
+    color: white;
+}
+
+.metaloids{
+    background-color: aquamarine;
+    color: white;
+}
+
+.halogen{;
+    background-color: plum;
+    color: white;
+}
+
+.post-transitionMetal{
+    background-color:  darkgray;
+    color: white;
+}
+
+.transitionMetal{
+    background-color: darksalmon;
+    color: white;
+}
+
+.lenthanoids{
+    background-color: crimson;
+    color: white;
+}
+
+.actinoids{
+    background-color: darkmagenta;
+    color: white;
+}
+
+.pTBottom{
+    height: 10px;
+}
+
+.periodicT{
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    width: 65%;
+    background-color:black;
+    opacity: 0.5;
+}
+
+.key1{
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+    padding: 15px;
+    width: 55%;
+    background-color:black;
+    opacity: 0.5;
+}
+
+.key2{
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 15px;
+    width: 11%;
+    background-color:black;
+    opacity: 0.5;
+}
+
+th{
+    height: 55px;
+    width: 75px;
+    text-align: center;   
+}
+
+section{
+    display: inline-block;
+}
+
+.alkaliMetals2{
+    background-color: coral;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.alkaliMetals2:hover{
+    background-color: darkblue;
+}
+
+.alkalineMetals2{
+    background-color: lightcoral;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.alkalineMetals2:hover{
+    background-color: blue;
+}
+
+.lenthanoids2{
+    background-color: crimson;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.lenthanoids2:hover{
+    background-color: maroon;
+}
+
+.actinoids2{
+    background-color: darkmagenta;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.actinoids2:hover{
+    background-color: red;
+}
+
+.transitionMetal2{
+    background-color: darksalmon;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.transitionMetal2:hover{
+    background-color: teal;
+}
+
+.post-transitionMetal2{
+    background-color:  darkgray;    
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.post-transitionMetal2:hover{
+    background-color:  purple;    
+}
+
+.metaloids2{
+    background-color: aquamarine;  
+    height: 55px;
+    width: 75px;
+    text-align: center; 
+    color: white;
+}
+
+.metaloids2:hover{
+    background-color: green;  
+}
+
+.nonmetal2{
+    background-color: blueviolet;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.nonmetal2:hover{
+    background-color: brown;
+}
+
+.halogen2{
+    background-color: plum;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.halogen2:hover{
+    background-color: #5b415b;
+}
+
+.nobleGases2{
+    background-color: turquoise;
+    height: 55px;
+    width: 75px;
+    text-align: center;
+    color: white;
+}
+
+.nobleGases2:hover{
+    background-color: orange;
+}
+
+.element{
+    background-color: coral;
+    color: white;    
+}
+
+.pDesc{
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 15px;
+    width: 39%;
+    background-color:black;
+    opacity: 0.5;
+}
+
+.pInfo{
+    width: 100%;
+    height: 55px;
+}
+
+#solid:hover{
+    background-color: darkblue;
+}
+
+#liquid:hover{
+    background-color: #000044;
+}
+
+#gas:hover{
+    background-color: #ADFF2F;
+}
+
+#unknown:hover{
+    background-color: #800000;
+}
+
+h5{
+    margin: 0;
+}
+
+@media screen and (max-width: 1311px) {
+    .key2{
+        width: 13%;
+    }
+
+}
+
+@media screen and (max-width: 1137px) {
+    .key2{
+        width: 14%;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+    .key2{
+        width: 16%;
+    }
+    
+    .periodicT{
+    width: 92%;
+    }
+    
+    .key1{
+        width: 76%;
+    }
+     .pDesc{
+        width: 76%;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    
+    .key2{
+        width: 22%;
+    }
+    
+    .key1{
+        width: 92%;
+    }
+    
+    .periodicT{
+    width: 92%;
+    }
+    
+    .pDesc{
+        width: 92%;
+    }
+
+}
+
+@media screen and (max-width: 665px) {
+    
+    .key2{
+        width: 24%;
+    }
+    
+    .key1{
+        width: 91%;
+    }
+    
+    .main{
+/*        width: 91%;*/
+        overflow-y: visible;
+        overflow-y: scroll;
+    }
+    
+    .pDesc{
+        width: 91%;
+    }
+
+}
+
+
+@media screen and (max-width: 625px) {
+    .key1{
+        width:92%
+    }
+    
+    .periodicT{
+        width: 628px;
+    }
+    
+    .header{
+        width: 687px;
+    }
+    
+    
+
+}
+
+/*
+@media screen and (max-width: 420px) {
+
+    
+    .header{
+        width: 165%;
+    }
+    
+    
+
+}
+*/
